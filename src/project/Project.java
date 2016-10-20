@@ -20,6 +20,7 @@ public class Project {
         Login l = new Login();
         l.setVisible(true);
 
+        System.out.println("Hola Mundo");
     }
     
 }
