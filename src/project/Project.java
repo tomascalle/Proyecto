@@ -5,6 +5,10 @@
  */
 package project;
 
+import java.awt.Color;
+import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
 /**
  *
  * @author Tomas Calle
@@ -16,11 +20,14 @@ public class Project {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
         Login l = new Login();
+        l.setBackground(Color.yellow);
         l.setVisible(true);
-
-        System.out.println("Hola Mundo");
+        
+        
+        
+        
     }
     
 }
