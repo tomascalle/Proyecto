@@ -9,6 +9,7 @@ package project;
  *
  * @author Tomas Calle
  */
+
 public class Project {
 
     /**
@@ -16,6 +17,9 @@ public class Project {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Login l = new Login();
+        l.setVisible(true);
+
     }
     
 }
