@@ -144,6 +144,15 @@ public class Login extends javax.swing.JFrame {
         {
             
             System.out.println(strline.split("-")[1]);
+                
+            if(user==strline.split("-")[0] && pass == strline.split("-")[1])
+            {
+            System.out.println("Logged In");
+            }
+            else
+            {
+            System.out.println("La contraseña o el username esta incorrecto");
+            }
         }
         
         br.close();
