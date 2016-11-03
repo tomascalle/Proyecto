@@ -24,8 +24,8 @@ public class Project {
         Login l = new Login();
         l.setBackground(Color.yellow);
         l.setVisible(true);
-        
-        
+        System.out.println(System.getProperty("user.dir"));
+
         
         
     }
