@@ -116,7 +116,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String user = jTextField1.getText();
+    String user = jTextField1.getText();
         String pass = jPasswordField1.getPassword().toString();
        
        
@@ -128,25 +128,34 @@ public class Login extends javax.swing.JFrame {
         BufferedReader br = new BufferedReader(fr);
         
         String strline="";
-        String [] clave = new String [2];
+        
         while((strline = br.readLine()) != null )
         {
-         clave = strline.split("-");
-         
-         if (clave[0].equals(pass) && clave[1].equals(user))
-         {
-         
-         }
-       
+            
+            strline.split("-");
+                
+            if(user==strline.split("-")[0] && pass == strline.split("-")[1])
+            {
+            System.out.println("Logged In");
+           STARTUP S = new STARTUP ();
+           S.setVisible(true);
+           this.setVisible(false);
+            }
+            else
+            {
+            System.out.println("La contraseña o el username esta incorrecto");
+            }
+        }
+        
         br.close();
         }
-
-    }//GEN-LAST:event_jButton1ActionPerformed
         catch(IOException e)
         {
         System.out.println(e);
         }
-    }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
