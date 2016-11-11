@@ -116,38 +116,59 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    String user = jTextField1.getText();
-        String pass = jPasswordField1.getPassword().toString();
-       
-       
+        String user = jTextField1.getText();
+        String pass = String.valueOf(jPasswordField1.getPassword());
+        boolean test = false;
         try
         {
+            FileReader fr = new FileReader("src/project/usuarios.txt");
+            BufferedReader br = new BufferedReader(fr);
+            String strline="";
             
-        FileReader fr = new FileReader("src/project/usuarios.txt");
-        
-        BufferedReader br = new BufferedReader(fr);
-        
-        String strline="";
-        
-        while((strline = br.readLine()) != null )
+        while((strline = br.readLine()) != null && !test )
         {
-            
-            strline.split("-");
+            String usr =strline.split("-")[0]; 
+            String pss = strline.split("-")[1];
+            if(user.equals(usr) && pass.equals(pss))
+            {
+                System.out.println("Logged In");
+               
+                test = true;
                 
-            if(user==strline.split("-")[0] && pass == strline.split("-")[1])
+            FileReader bb = new FileReader("src/project/player info.txt");
+            BufferedReader aa = new BufferedReader(bb);
+            
+            while((strline = aa.readLine()) != null)
             {
-            System.out.println("Logged In");
-           STARTUP S = new STARTUP ();
-           S.setVisible(true);
-           this.setVisible(false);
+                if (user.equals(strline.split(";")[0]));
+                {
+                String ff = strline.split(";")[1];
+                
+                if (ff.equals(""))
+                {
+                    System.out.println("Logged In");
+                        STARTUP S = new STARTUP ();
+                        S.setVisible(true);
+                        this.setVisible(false);
+                }
+                else
+                {
+                   System.out.println("Logged In");
+                     status b = new status();
+                     b.setVisible(true);
+                    this.setVisible(false);      
+                       
+                        
+                        }
             }
-            else
-            {
-            System.out.println("La contraseña o el username esta incorrecto");
+                
             }
+            }  
         }
+        if (!test) System.out.println("contrasña incorrecta");
         
         br.close();
+        jPasswordField1.setText("");
         }
         catch(IOException e)
         {
