@@ -34,25 +34,45 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
         setBackground(java.awt.Color.pink);
         setFocusable(false);
+        setMinimumSize(new java.awt.Dimension(1080, 720));
+        getContentPane().setLayout(null);
 
         jLabel1.setText("Wooden Entertainment");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(257, 776, 111, 28);
 
+        jPasswordField1.setBackground(new java.awt.Color(82, 85, 85));
+        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
         jPasswordField1.setText("jPasswordField1");
+        jPasswordField1.setBorder(null);
         jPasswordField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPasswordField1MouseClicked(evt);
             }
         });
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(460, 390, 120, 14);
 
+        jTextField1.setBackground(new java.awt.Color(80, 85, 85));
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("jTextField1");
+        jTextField1.setBorder(null);
         jTextField1.setDoubleBuffered(true);
         jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -64,10 +84,13 @@ public class Login extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(460, 310, 200, 30);
 
-        jLabel2.setText("User");
-
-        jLabel3.setText("Password");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/title.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(-60, 560, 1000, 450);
 
         jButton1.setText("Log In");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -75,52 +98,26 @@ public class Login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(490, 440, 100, 20);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(84, 84, 84)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(97, 97, 97)
-                                .addComponent(jLabel3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 400, Short.MAX_VALUE)
-                                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(257, 257, 257)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(355, 355, 355)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(377, 377, 377))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(114, 114, 114)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
-        );
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/login.png"))); // NOI18N
+        jLabel7.setText("jLabel7");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(-10, 240, 830, 340);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/fondo.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, -190, 1210, 1100);
+
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(660, 90, 34, 14);
+
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(510, 150, 34, 14);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -202,6 +199,10 @@ public class Login extends javax.swing.JFrame {
         jPasswordField1.setText("");
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -243,6 +244,9 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
