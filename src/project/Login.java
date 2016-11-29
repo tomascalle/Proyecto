@@ -161,7 +161,7 @@ public class Login extends javax.swing.JFrame {
                 else
                 {
                    System.out.println("Logged In");
-                     status b = new status();
+                     Stats b = new Stats();
                      b.setVisible(true);
                     this.setVisible(false);      
                        
