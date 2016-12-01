@@ -9,6 +9,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
 
+
+
 /**
  *
  * @author Tomas Calle
@@ -154,7 +156,8 @@ public class Login extends javax.swing.JFrame {
                 if (ff.equals(""))
                 {
                     System.out.println("Logged In");
-                        STARTUP S = new STARTUP ();
+                    //usuario.currentuser.username = user;                           
+                   STARTUP S = new STARTUP ();
                         S.setVisible(true);
                         this.setVisible(false);
                 }

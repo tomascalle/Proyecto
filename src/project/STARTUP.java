@@ -7,7 +7,8 @@ package project;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
-
+import java.io.FileWriter; 
+import java.io.BufferedWriter; 
 public class STARTUP extends javax.swing.JFrame {
 
   
@@ -28,6 +29,7 @@ public class STARTUP extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -48,7 +50,7 @@ public class STARTUP extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(790, 90, 250, 310);
+        jLabel1.setBounds(810, 90, 280, 300);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/zft5bjshjtown4s5qrj7 - Copy (2).png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -60,8 +62,17 @@ public class STARTUP extends javax.swing.JFrame {
         jLabel3.setBounds(430, 120, 210, 240);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Startup.png"))); // NOI18N
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, -6, 1090, 690);
+
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(400, 540, 290, 80);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -83,6 +94,19 @@ public class STARTUP extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Winston-concept.jpg")));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Winston-concept.jpg")));
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+       /*try {
+        FileWriter fw = new FileWriter ("src/project/usuarios.txt\"");
+        BufferedWriter bw = new BufferedWriter (fw);
+        
+
+       catch (IOException e)
+       {
+           
+       }*/
+    
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -124,5 +148,6 @@ public class STARTUP extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
