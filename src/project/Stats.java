@@ -16,6 +16,7 @@ public class Stats extends javax.swing.JFrame {
      */
     public Stats() {
         initComponents();
+               jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
     }
 
     /**
@@ -40,8 +41,8 @@ public class Stats extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(201, 201, 201)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -53,7 +54,7 @@ public class Stats extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(10, 11, 283, 261);
+        jPanel1.setBounds(30, 90, 283, 261);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -89,6 +90,7 @@ public class Stats extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Stats().setVisible(true);
+         
             }
         });
     }
