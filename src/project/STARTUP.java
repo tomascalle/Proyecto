@@ -41,23 +41,23 @@ public class STARTUP extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(40, 130, 288, 220);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/copy 1].jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/tracer_presskit - Copy.png"))); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(410, 120, 278, 256);
+        jLabel1.setBounds(790, 90, 250, 310);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/copy 2.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/zft5bjshjtown4s5qrj7 - Copy (2).png"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
             }
         });
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(770, 120, 269, 256);
+        jLabel3.setBounds(430, 120, 210, 240);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Startup.png"))); // NOI18N
         getContentPane().add(jLabel4);
