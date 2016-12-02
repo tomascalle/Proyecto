@@ -5,6 +5,10 @@
  */
 package project;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author Alejandro Yepes
@@ -16,7 +20,33 @@ public class Stats extends javax.swing.JFrame {
      */
     public Stats() {
         initComponents();
+        
                jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+             try{
+               FileReader bb = new FileReader("src/project/player info.txt");
+               BufferedReader aa = new BufferedReader(bb);
+               
+               String strline ="";
+               usuario.currentuser.username = strline.split(";")[0];
+               usuario.currentuser.character = strline.split(";")[1];
+               usuario.currentuser.nivel = strline.split(";")[2];
+             
+             }
+               
+               
+        catch(IOException e)
+        {
+        System.out.println(e);
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 
     /**
