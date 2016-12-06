@@ -28,8 +28,7 @@ public class Stats extends javax.swing.JFrame {
                
                String strline ="";
                usuario.currentuser.username = strline.split(";")[0];
-               usuario.currentuser.character = strline.split(";")[1];
-               usuario.currentuser.nivel = strline.split(";")[2];
+
              
              }
                

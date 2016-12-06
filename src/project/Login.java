@@ -160,6 +160,7 @@ public class Login extends javax.swing.JFrame {
                    STARTUP S = new STARTUP ();
                         S.setVisible(true);
                         this.setVisible(false);
+                        S.setSize(1100,780);
                 }
                 else
                 {
